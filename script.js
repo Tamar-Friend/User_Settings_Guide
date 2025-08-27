@@ -8,6 +8,12 @@
             currentSlide = (n + totalSlides) % totalSlides;
             slides[currentSlide].classList.add('active');
             
+            // גלילה לראש השקופית החדשה - השורה החדשה!
+            document.querySelector('.presentation-container').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+            
             // Update navigation buttons
             const prevBtn = document.querySelector('.prev-btn');
             const nextBtn = document.querySelector('.next-btn');
