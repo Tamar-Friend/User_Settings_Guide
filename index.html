@@ -12,7 +12,11 @@
 <body>
 
     <div class="presentation-container">
-        <!-- Slide 1: Title -->
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="חיפוש: מס' עמוד או שם הגדרה...">
+            <button id="searchButton" onclick="searchAndNavigate()">🔎 חפש</button>
+        </div>
+
         <div class="slide active title-slide">
             <h1>📱 מדריך הגדרות הטלפון החכם</h1>
             <p>מדריך מלא ומפורט לכל ההגדרות החשובות</p>
@@ -20,9 +24,8 @@
             <p style="font-size: 16px; margin-top: 20px;">לחצו על "הבא" כדי להתחיל</p>
         </div>
 
-        <!-- Slide 2: Wi-Fi -->
         <div class="slide">
-            <div class="slide-counter">2/12</div>
+            <div class="slide-counter">2/21</div>
             <div class="setting-icon wifi-icon">📶</div>
             <h2>Wi-Fi - רשת אלחוטית</h2>
 
@@ -54,9 +57,8 @@
             </div>
         </div>
 
-        <!-- Slide 3: Bluetooth -->
         <div class="slide">
-            <div class="slide-counter">3/12</div>
+            <div class="slide-counter">3/21</div>
             <div class="setting-icon bluetooth-icon">🔗</div>
             <h2>Bluetooth - חיבור אלחוטי</h2>
 
@@ -87,9 +89,8 @@
             </div>
         </div>
 
-        <!-- Slide 4: NFC -->
         <div class="slide">
-            <div class="slide-counter">4/12</div>
+            <div class="slide-counter">4/21</div>
             <div class="setting-icon nfc-icon">📡</div>
             <h2>NFC - תקשורת קרובה</h2>
 
@@ -117,9 +118,8 @@
             </div>
         </div>
 
-        <!-- Slide 5: Mobile Data -->
         <div class="slide">
-            <div class="slide-counter">5/12</div>
+            <div class="slide-counter">5/21</div>
             <div class="setting-icon mobile-icon">📱</div>
             <h2>Mobile Data - נתונים סלולריים</h2>
 
@@ -148,9 +148,8 @@
             </div>
         </div>
 
-        <!-- Slide 6: Location -->
         <div class="slide">
-            <div class="slide-counter">6/12</div>
+            <div class="slide-counter">6/21</div>
             <div class="setting-icon location-icon">📍</div>
             <h2>Location - שירותי מיקום</h2>
 
@@ -179,9 +178,8 @@
             </div>
         </div>
 
-        <!-- Slide 7: Flash Light -->
         <div class="slide">
-            <div class="slide-counter">7/12</div>
+            <div class="slide-counter">7/21</div>
             <div class="setting-icon flash-icon">🔦</div>
             <h2>Flash Light - פנס</h2>
 
@@ -209,9 +207,8 @@
             </div>
         </div>
 
-        <!-- Slide 8: Auto Rotate -->
         <div class="slide">
-            <div class="slide-counter">8/12</div>
+            <div class="slide-counter">8/21</div>
             <div class="setting-icon rotate-icon">🔄</div>
             <h2>Auto Rotate - סיבוב אוטומטי</h2>
 
@@ -239,9 +236,8 @@
             </div>
         </div>
 
-        <!-- Slide 9: Do Not Disturb -->
         <div class="slide">
-            <div class="slide-counter">9/12</div>
+            <div class="slide-counter">9/21</div>
             <div class="setting-icon dnd-icon">🔕</div>
             <h2>Do Not Disturb - נא לא להפריע</h2>
 
@@ -270,9 +266,8 @@
             </div>
         </div>
 
-        <!-- Slide 10: Display -->
         <div class="slide">
-            <div class="slide-counter">10/12</div>
+            <div class="slide-counter">10/21</div>
             <div class="setting-icon display-icon">💻</div>
             <h2>Display - הגדרות תצוגה</h2>
 
@@ -294,7 +289,6 @@
             <div class="screenshot-section">
                 <div class="screenshot-title">📷 צילום מסך של הגדרות Display</div>
                 <img src="pictures/display.jpg" />
-
             </div>
 
             <div class="tip">
@@ -302,16 +296,14 @@
             </div>
         </div>
 
-        <!-- Slide 11: Blue Light -->
         <div class="slide">
-            <div class="slide-counter">11/12</div>
+            <div class="slide-counter">11/21</div>
             <div class="setting-icon blue-light-icon">🌙</div>
             <h2>Blue Light - פילטר אור כחול</h2>
 
             <div class="explanation">
                 פילטר האור הכחול מפחית את האור הכחול מהמסך, מה שעוזר לעיניים ומשפר את איכות השינה בערב.
             </div>
-
 
             <div class="screenshot-section">
                 <div class="screenshot-title">📷 צילום מסך של הגדרות Blue Light</div>
@@ -322,9 +314,9 @@
                 💡 <strong>טיפ:</strong> הפעילו אוטומטית בשעות הערב כדי לשפר את איכות השינה שלכם.
             </div>
         </div>
-        <!-- Slide 12: Screen Lock -->
+
         <div class="slide">
-            <div class="slide-counter">12/18</div>
+            <div class="slide-counter">12/21</div>
             <div class="setting-icon screen-lock-icon">🔐</div>
             <h2>Screen Lock - נעילת מסך</h2>
 
@@ -347,7 +339,7 @@
 
             <div class="screenshot-section">
                 <div class="screenshot-title">📷 צילום מסך של הגדרות Screen Lock</div>
-                <img src="pictures/screen_lock.jpg" alt="הגדרות Screen Lock" /> 
+                <img src="pictures/screen_lock.jpg" alt="הגדרות Screen Lock" />
             </div>
 
             <div class="warning">
@@ -355,9 +347,8 @@
             </div>
         </div>
 
-        <!-- Slide 13: Sound -->
         <div class="slide">
-            <div class="slide-counter">13/18</div>
+            <div class="slide-counter">13/21</div>
             <div class="setting-icon sound-icon">🔊</div>
             <h2>Sound - צליל</h2>
 
@@ -379,8 +370,8 @@
 
             <div class="screenshot-section">
                 <div class="screenshot-title">📷 צילום מסך של הגדרות Sound</div>
-                
-                <img src="pictures/sound.jpg" alt="הגדרות Sound" /> 
+
+                <img src="pictures/sound.jpg" alt="הגדרות Sound" />
             </div>
 
             <div class="tip">
@@ -388,9 +379,8 @@
             </div>
         </div>
 
-        <!-- Slide 14: Device Maintenance -->
         <div class="slide">
-            <div class="slide-counter">14/18</div>
+            <div class="slide-counter">14/21</div>
             <div class="setting-icon maintenance-icon">⚙️</div>
             <h2>Device Maintenance - תחזוקת מכשיר</h2>
 
@@ -411,8 +401,8 @@
 
             <div class="screenshot-section">
                 <div class="screenshot-title">📷 צילום מסך של הגדרות Device Maintenance</div>
-                
-               <img src="pictures/Device_maintenance.jpg" alt="הגדרות Device Maintenance" /> 
+
+                <img src="pictures/Device_maintenance.jpg" alt="הגדרות Device Maintenance" />
             </div>
 
             <div class="tip">
@@ -420,9 +410,8 @@
             </div>
         </div>
 
-        <!-- Slide 15: Mobile Network -->
         <div class="slide">
-            <div class="slide-counter">15/18</div>
+            <div class="slide-counter">15/21</div>
             <div class="setting-icon network-icon">📶</div>
             <h2>Mobile Network - רשת סלולרית</h2>
 
@@ -443,8 +432,8 @@
 
             <div class="screenshot-section">
                 <div class="screenshot-title">📷 צילום מסך של הגדרות Mobile Network</div>
-                
-             <img src="pictures/mobile_network.jpg" alt="הגדרות Mobile Network" /> 
+
+                <img src="pictures/mobile_network.jpg" alt="הגדרות Mobile Network" />
             </div>
 
             <div class="warning">
@@ -452,15 +441,13 @@
             </div>
         </div>
 
-     
-        <!-- Slide 16: Language -->
         <div class="slide">
-            <div class="slide-counter">16/19</div>
+            <div class="slide-counter">16/21</div>
             <div class="setting-icon language-icon">🌐</div>
             <h2>Language - שפה</h2>
 
             <div class="explanation">
-                הגדרות השפה מאפשרות לכם לשנות את שפת המערכת, שפת המקלדת ואזורי זמן על פי המיקום הגיאוגרafi שלכם.
+                הגדרות השפה מאפשרות לכם לשנות את שפת המערכת, שפת המקלדת ואזורי זמן על פי המיקום הגיאוגרפי שלכם.
             </div>
 
             <div class="steps">
@@ -485,9 +472,8 @@
             </div>
         </div>
 
-        <!-- Slide 17: Accessibility -->
         <div class="slide">
-            <div class="slide-counter">17/19</div>
+            <div class="slide-counter">17/21</div>
             <div class="setting-icon" style="background: linear-gradient(135deg, #9c88ff 0%, #00c9ff 100%);">♿</div>
             <h2>Accessibility - נגישות</h2>
 
@@ -510,7 +496,7 @@
 
             <div class="screenshot-section">
                 <div class="screenshot-title">📷 צילום מסך של הגדרות Accessibility</div>
-                <img src="pictures/accessibility.jpg" alt="הגדרות Accessibility" /> 
+                <img src="pictures/accessibility.jpg" alt="הגדרות Accessibility" />
             </div>
 
             <div class="tip">
@@ -518,32 +504,118 @@
             </div>
         </div>
 
-        
-        <!-- <div class="slide">
-            <div class="slide-counter">17/18</div>
-            <div class="setting-icon smart-view-icon">📺</div>
+        <div class="slide">
+            <div class="slide-counter">18/21</div>
+            <div class="setting-icon remote-support-icon">🔧</div>
+            <h2>Remote Support - תמיכה מרחוק</h2>
+
+            <div class="explanation">
+                תמיכה מרחוק מאפשרת לטכנאי או מנהל IT להתחבר לטלפון שלכם מרחוק כדי לפתור בעיות, להתקין אפליקציות או לעדכן הגדרות בלי שתצטרכו להגיע פיזית.
+            </div>
+
+            <div class="feature-grid">
    
-
-
-
-            <div class="screenshot-section">
-                <div class="screenshot-title">📷 צילום מסך של הגדרות Smart View</div> -->
-                <!-- כאן תוסיפי את התמונה -->
-                <!-- <img src="pictures/smart_view.jpg" alt="הגדרות Smart View" /> -->
-            <!-- </div>
+                <div class="feature-box">
+                    <h4>⚙️ תיקון הגדרות</h4>
+                    <p>שינוי הגדרות מורכבות בלי טעויות</p>
+                </div>
+                <div class="feature-box">
+                    <h4>📱 התקנת אפליקציות</h4>
+                    <p>התקנה אוטומטית של אפליקציות נדרשות</p>
+                </div>
+                <div class="feature-box">
+                    <h4>🎓 הדרכה</h4>
+                    <p>למידה תוך כדי צפייה בפעולות</p>
+                </div>
+            </div>
 
             <div class="tip">
-                💡 <strong>טיפ:</strong> מושלם להצגת תמונות, סרטונים ומצגות על מסך גדול. שימו לב לצריכת סוללה.
+                💡 <strong>יתרון מרכזי:</strong> חיסכון בזמן ובמאמץ - לא צריך להגיע למשרד או לחכות לטכנאי!
             </div>
-        </div> -->
-        <!-- Slide 12: Summary -->
+        </div>
+
         <div class="slide">
-            <div class="slide-counter">12/12</div>
+            <div class="slide-counter">19/21</div>
+            <div class="setting-icon knox-icon">🔒</div>
+            <h2>Knox Remote Support - סמסונג</h2>
+
+            <div class="explanation">
+                <div class="explanation">
+                    Knox Remote Support הוא הפתרון הרשמי של Samsung לתמיכה מרחוק. מותקן מראש ברוב טלפוני Galaxy ומספק חיבור בטוח ומוצפן.
+                </div>
+            
+                <div class="steps">
+                    <h3>איך להפעיל תמיכה מרחוק:</h3>
+                    <ol>
+                        <li>לחצו על **Service Desk**</li>
+                        <li>בחרו **Run Knox Remote App**</li>
+                        <li>הקלידו את הקוד שקיבלתם</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="screenshot-section">
+                <div class="screenshot-title">📷 צילום מסך של Knox Remote Support</div>
+                <div class="knox-screenshots-horizontal">
+                    <div class="knox-screenshot-step">
+                        <h3>1. מסך התחברות</h3>
+                        <img src="pictures/knox_remote_1.jpg" alt="Knox Remote Support - מסך התחברות" />
+                    </div>
+                    <div class="knox-screenshot-step">
+                        <h3>2. הזנת קוד</h3>
+                        <img src="pictures/knox_remote_2.jpg" alt="Knox Remote Support - הזנת קוד" />
+                    </div>
+                    <div class="knox-screenshot-step">
+                        <h3>3. אישור הרשאות</h3>
+                        <img src="pictures/knox_remote_3.jpg" alt="Knox Remote Support - אישור הרשאות" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="warning">
+                ⚠️ <strong>חשוב לזכור:</strong> הקוד תקף לזמן מוגבל ויש להזינו במדויק.
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="slide-counter">20/21</div>
+            <div class="setting-icon safety-icon">🛡️</div>
+            <h2>בטיחות ואבטחה</h2>
+
+            <div class="explanation">
+                תמיכה מרחוק היא כלי עוצמתי ולכן חשוב מאוד לשמור על כללי בטיחות ואבטחה נוקשים כדי להגן על המידע האישי שלכם.
+            </div>
+
+            <div class="steps">
+                <h3>כללי בטיחות חובה:</h3>
+                <ol>
+                    <li><strong>רק טכנאים מורשים:</strong> וודאו שאתם מכירים את הטכנאי</li>
+                    <li><strong>אל תשתפו קוד:</strong> הקוד רק לטכנאי שביקש אותו</li>
+                    <li><strong>עצרו בכל רגע:</strong> תמיד תוכלו לנתק את החיבור</li>
+                    <li><strong>צפו במה שקורה:</strong> עקבו אחר הפעולות במסך</li>
+                    <li><strong>שאלו שאלות:</strong> אל תהססו לשאול מה הטכנאי עושה</li>
+                </ol>
+            </div>
+
+            <div class="danger">
+                🚨 <strong>אל תעשו את זה לעולם:</strong>
+                <br>• אל תתנו קוד לאנשים לא מוכרים
+                <br>• אל תשאירו את החיבור ללא השגחה
+                <br>• אל תתירו גישה לאפליקציות בנקאיות
+                <br>• אל תיתנו קודים בשיחות טלפון לא מזוהות
+            </div>
+
+            <div class="tip">
+                💡 <strong>זכרו:</strong> אתם בשליטה! תמיד תוכלו לעצור את הסשן או לסגור את האפליקציה.
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="slide-counter">21/21</div>
             <h1>🎯 סיכום ועצות</h1>
             <div class="explanation">
                 <h3 style="color: #667eea; margin-bottom: 20px;">עצות חשובות לשימוש מיטבי:</h3>
             </div>
-
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0;">
                 <div class="tip">
                     <strong>🔋 חיסכון בסוללה:</strong><br>
@@ -551,7 +623,6 @@
                     • הגדירו בהירות אוטומטית<br>
                     • קצרו זמן כיבוי מסך
                 </div>
-
                 <div class="warning">
                     <strong>🛡️ ביטחון ופרטיות:</strong><br>
                     • בדקו הרשאות אפליקציות<br>
@@ -559,12 +630,10 @@
                     • נהלו הגדרות מיקום בזהירות
                 </div>
             </div>
-
             <div class="tip" style="margin-top: 30px;">
                 <strong>✨ זכרו:</strong> כל הגדרה שינתה יכולה להשפיע על ביצועים, סוללה וביטחון.
                 התנסו בהגדרות השונות כדי למצוא את המתאים ביותר עבורכם!
             </div>
-
             <p style="margin-top: 30px; font-size: 18px; color: #667eea;">
                 <strong>המדריך הסתיים - תהנו מהטלפון החכם שלכם! 📱✨</strong>
             </p>
@@ -575,7 +644,6 @@
             <button class="nav-btn next-btn" onclick="nextSlide()">הבא ⏮️</button>
         </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 

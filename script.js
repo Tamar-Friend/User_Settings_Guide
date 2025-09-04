@@ -1,5 +1,4 @@
-
-        let currentSlide = 0;
+let currentSlide = 0;
         const slides = document.querySelectorAll('.slide');
         const totalSlides = slides.length;
 
@@ -39,12 +38,48 @@
             }
         }
 
+        // New function to handle search and navigation
+        function searchAndNavigate() {
+            const query = document.getElementById('searchInput').value.trim();
+            if (!query) {
+                alert('יש להזין מונח חיפוש.');
+                return;
+            }
+
+            let foundIndex = -1;
+            // Iterate through slides to find a match
+            for (let i = 0; i < slides.length; i++) {
+                const slide = slides[i];
+                const slideText = slide.textContent || slide.innerText;
+                const slideCounter = slide.querySelector('.slide-counter')?.textContent.split('/')[0].trim();
+                
+                // Check for match by page number or text content
+                if (slideCounter === query || slideText.includes(query)) {
+                    foundIndex = i;
+                    break;
+                }
+            }
+
+            if (foundIndex !== -1) {
+                showSlide(foundIndex);
+            } else {
+                alert('לא נמצאה שקופית התואמת לחיפוש שלך.');
+            }
+        }
+
         // Keyboard navigation
         document.addEventListener('keydown', function(e) {
             if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
                 previousSlide();
             } else if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
                 nextSlide();
+            }
+        });
+
+        // Event listener for "Enter" key on the search input
+        document.getElementById('searchInput').addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') {
+                searchAndNavigate();
             }
         });
 
@@ -68,4 +103,3 @@
 
         // Initialize
         showSlide(0);
- 
