@@ -40,7 +40,7 @@ let currentSlide = 0;
 
         // New function to handle search and navigation
         function searchAndNavigate() {
-            const query = document.getElementById('searchInput').value.trim();
+            const query = document.getElementById('searchInput').value.trim().toLowerCase();
             if (!query) {
                 alert('יש להזין מונח חיפוש.');
                 return;
@@ -50,7 +50,7 @@ let currentSlide = 0;
             // Iterate through slides to find a match
             for (let i = 0; i < slides.length; i++) {
                 const slide = slides[i];
-                const slideText = slide.textContent || slide.innerText;
+                const slideText = (slide.textContent || slide.innerText).toLowerCase();
                 const slideCounter = slide.querySelector('.slide-counter')?.textContent.split('/')[0].trim();
                 
                 // Check for match by page number or text content
